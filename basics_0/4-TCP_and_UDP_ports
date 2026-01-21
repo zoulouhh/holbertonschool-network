@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# utilisr netstat
+netstat -lp
