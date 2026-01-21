@@ -1,5 +1,3 @@
-
 #!/usr/bin/env bash
-# This script listens on port 98 on localhost and prints received data
-
-nc -l 127.0.0.1 98
+# Listen on localhost port 98 and print anything received
+nc -l 127.0.0.2 98
