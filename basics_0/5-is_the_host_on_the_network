@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 # show the ping
 if [ $# -eq 0 ]; then
