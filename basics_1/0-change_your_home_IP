@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
-# This script modifies /etc/hosts to change the resolutionof localhost and facebook.com
+# Configure localhost and facebook.com resolution
 
-# Backup the current /etc/hosts file
-cp /etc/hosts /etc/hosts.bak
+# Remove existing localhost entries
+sed -i '/[[:space:]]localhost$/d' /etc/hosts
 
-# Remove existing localhost and facebook.com entries
-grep -v -E 'localhost|facebook\.com' /etc/hosts.bak > /etc/hosts
+# Add new localhost entry
+echo "127.0.0.2 localhost" >> /etc/hosts
 
-# Add the new required entries
-echo -e "127.0.0.1\tlocalhost" >> /etc/hosts
-echo -e "8.8.8.8\tfacebook.com" >> /etc/hosts
+# Remove existing facebook.com entries
+sed -i '/[[:space:]]facebook.com$/d' /etc/hosts
 
-echo "Updated /etc/hosts:"
-cat /etc/hosts
+# Add new facebook.com entry
+echo "8.8.8.8 facebook.com" >> /etc/hosts
