@@ -1,0 +1,32 @@
+What Happens When You Type https://www.google.com and Press Enter?
+Have you ever wondered what really happens when you type a website address and hit Enter? It might seem simple, but your computer and the internet do a lot of work in just a few seconds. Let me explain it step by step!
+
+1. Finding Google’s Address (DNS)
+Your computer doesn’t understand words like “google.com.” It needs a special number called an IP address to find the website. So first, your computer asks a system called DNS (like the internet’s phone book) to find the address of Google.
+
+2. Making a Connection (TCP/IP)
+Once your computer knows Google’s address, it tries to connect to Google’s servers using a set of rules called TCP/IP. Think of it like making a phone call to the right number.
+
+3. Passing Through Firewalls
+Your request passes through several firewalls - these are like security guards that check if your request is safe before letting it through. This happens on your computer, your network, and Google’s side.
+
+4. Securing the Connection (HTTPS)
+Because you typed “https,” your browser and Google agree to talk privately using encryption. This keeps your information safe from hackers while it travels over the internet.
+
+5. Sharing the Load (Load Balancer)
+Google has millions of servers. To keep things fast and reliable, a load balancer decides which server will handle your request so no single server gets overwhelmed.
+
+6. Handling Your Request (Web Server)
+The chosen server receives your request and starts working on it. For Google’s homepage, it might just send back some simple files. For a search, it passes your request to another server.
+
+7. Processing Your Search (Application Server)
+This server runs the actual Google search program. It figures out what you’re looking for and gets the results ready.
+
+8. Getting Data (Database)
+To find the best results, Google’s servers look into huge databases filled with information from all over the web.
+
+9. Sending the Results Back
+Finally, Google sends the results back through the servers, load balancer, and internet, all encrypted and safe. Your browser receives the data and shows you the Google homepage or search results.
+
+In Short
+Typing “https://www.google.com” sets off an amazing chain of events involving address lookups, secure connections, smart servers, and lots of data - all in just a blink of an eye!
